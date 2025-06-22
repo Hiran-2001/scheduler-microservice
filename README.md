@@ -38,7 +38,7 @@ The code adheres to SOLID principles, uses modular architecture, and includes Sw
 3. Configure environment variables by copying `.env.example` to `.env`:
    ```bash
    cp .env.example .env
-   # Update the .env file with your database and Redis connection details
+   # Update the .env file with your database connection details
    ```
 
 4. Start the development server:
@@ -55,7 +55,7 @@ The code adheres to SOLID principles, uses modular architecture, and includes Sw
     "name": "Test Every Minute",
     "type": "data-processing", 
     "schedule": "* * * * *",
-    "config": { "task": "test" },
+    "parameters": { "task": "test" },
     "isActive": true
     }
    </code></pre>
