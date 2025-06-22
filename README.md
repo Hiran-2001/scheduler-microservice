@@ -55,7 +55,7 @@ The code adheres to SOLID principles, uses modular architecture, and includes Sw
     "name": "Test Every Minute",
     "type": "data-processing",
     "schedule": "* * * * *",
-    "config": { "task": "test" },
+    "parameters": { "task": "test" },
     "isActive": true
     }
    </code></pre>
