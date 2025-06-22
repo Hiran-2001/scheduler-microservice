@@ -38,7 +38,7 @@ The code adheres to SOLID principles, uses modular architecture, and includes Sw
 3. Configure environment variables by copying `.env.example` to `.env`:
    ```bash
    cp .env.example .env
-   # Update the .env file with your database and Redis connection details
+   # Update the .env file with your database connection details
    ```
 
 4. Start the development server:
@@ -49,7 +49,6 @@ The code adheres to SOLID principles, uses modular architecture, and includes Sw
    
    <p><strong>URL:<strong> http://localhost:3000/jobs</p>
    <p><strong>Method:</strong> <code>POST</code></p>
-   <p><strong>🔹 Description:</strong> Handles user registration and save the details in database.</p>
    <h3>🔹 Body (JSON)</h3>
    <pre><code>
     {
