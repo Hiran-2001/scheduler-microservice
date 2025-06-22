@@ -1,6 +1,12 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document, Types } from "mongoose";
 
+export enum JobTypes {
+  EMAIL = 'email',
+  NOTIFICATION = 'notification',
+  DATA_PROCESSING = 'data-processing',
+}
+
 export type JobDocument = Job & Document;
 
 @Schema({ timestamps: true })
@@ -13,7 +19,7 @@ export class Job {
     description: string;
 
     @Prop({ required: true })
-    type: string;
+    type: JobTypes;
 
     @Prop({ required: true })
     schedule: string;

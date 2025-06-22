@@ -49,12 +49,11 @@ The code adheres to SOLID principles, uses modular architecture, and includes Sw
    
    <p><strong>URL:<strong> http://localhost:3000/jobs</p>
    <p><strong>Method:</strong> <code>POST</code></p>
-   <p><strong>🔹 Description:</strong> Handles user registration and save the details in database.</p>
    <h3>🔹 Body (JSON)</h3>
    <pre><code>
     {
     "name": "Test Every Minute",
-    "type": "data-processing",
+    "type": "data-processing", 
     "schedule": "* * * * *",
     "config": { "task": "test" },
     "isActive": true
