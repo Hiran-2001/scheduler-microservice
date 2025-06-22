@@ -53,7 +53,7 @@ The code adheres to SOLID principles, uses modular architecture, and includes Sw
    <pre><code>
     {
     "name": "Test Every Minute",
-    "type": "data-processing", 
+    "type": "data-processing", // Available types: data-processing, email, notification
     "schedule": "* * * * *",
     "parameters": { "task": "test" },
     "isActive": true
